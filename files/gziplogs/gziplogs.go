@@ -153,7 +153,7 @@ func main() {
 	}
 	flag.Parse()
 
-	const maxAge = 24 * time.Hour
+	const maxAge = 30 * 24 * time.Hour
 	if err := compressFiles(rootDir, maxAge); err != nil {
 		log.Fatalf("error: %s", err)
 	}
