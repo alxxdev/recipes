@@ -44,6 +44,7 @@ func gzCompress(src, dest string) error {
 	return nil
 }
 
+// SHA1 > 2025
 func fileSHA1(fileName string) (string, error) {
 	file, err := os.Open(fileName)
 	if err != nil {
